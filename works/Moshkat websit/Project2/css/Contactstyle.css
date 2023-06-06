@@ -1,0 +1,114 @@
+/* start first contact  */
+.services .container .card .incard{
+    background-color: rgba(255, 255, 255, 0);
+    
+}
+.services .container .card .incard:hover{
+    box-shadow: none;
+    transform: none;
+}
+.services .container .card .incard i{
+    color: white;
+    font-size: 40px;
+}
+.services .container .card .incard h3{
+    color: black;
+}
+.services .container .card .incard p{
+    color: white;
+}
+.services .container .card .incard p a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+@media(min-width: 1080px){
+    .services .container .card .Email{
+        width: 45%;
+    }
+}
+
+@media(min-width: 768px){
+    .services .container .card div.Address{
+        border-right: 1px solid black;
+    }
+}
+@media(min-width: 1200px){
+    .services .container .card div.phone{
+        border-left: 1px solid black;
+    }
+}
+.services .container .card .incard p.phone{
+    font-family: arial;
+}
+/* End first contact  */
+/* ------------------------------------------------------------- */
+/* start second contact  */
+.location .container{
+    height: 300px;
+    width: 100%;
+}
+.location .container .card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.location .container .card .incard{
+    width: 45%;
+    margin: 30px 0%;
+}
+.location .container .card .incard iframe{
+    width: 100%;
+    height: 100%;
+}
+@media(min-width: 768px){
+    .location .container{
+        height: 500px;
+        width: 100%;
+    }
+}
+@media(max-width: 768px){
+    .location .container{
+        height: 700px;
+        width: 100%;
+    }
+    .location .container .card .incard{
+        width: 96%;
+    }
+}
+.location .container .card .incard .message{
+    background-color: rgb(110, 110, 110);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+.location .container .card .incard .message h2{
+    margin: 5px;
+}
+.location .container .card .incard .message .line{
+    width: 45%;
+    margin: 5px;
+    border: none;
+    padding: 3px;
+}
+
+.location .container .card .incard .message .textarea {
+    padding: 3px;
+    margin: 5px;
+    width: calc(90% + 15px);
+}
+.location .container .card .incard .message .send{
+    padding: 10px 20px;
+    margin: 5px;
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: black;
+}
+.location .container .card .incard .message .send:hover{
+    border: 1px solid white;
+}
+/* End second contact  */

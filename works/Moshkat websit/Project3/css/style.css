@@ -1,0 +1,188 @@
+*{
+    margin: 0%;
+    padding: 0%;    
+}
+body{
+    background-color: darkgray;
+    font-family: 'Cairo', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.Account{
+    color: darkgray;
+}
+nav .fa-user-circle,
+nav .fa-car{
+    font-size: 35px;
+    color: white;
+}
+section .fa-tachometer-alt,
+section .fa-shapes,
+section .fa-user-shield,
+section .fa-spray-can{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+section .fa-tachometer-alt{
+    color: rgb(255, 251, 0);
+}
+section .fa-shapes{
+    color: rgb(255, 166, 0);
+}
+section .fa-user-shield{
+    color: rgb(0, 204, 255);
+}
+section .fa-spray-can{
+    color: rgb(0, 255, 34);
+}
+.container-fluid .row .col{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right:  auto;
+}
+.container-fluid .row .col .card{
+    padding-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Founders{
+    background-color: rgb(75, 75, 75);
+}
+.container-fluid .row .card{
+    margin-left: auto;
+    margin-right: auto;
+}
+.Founders .container-fluid h2{
+    color: white;
+    font-size: xx-large;
+    font-weight: bolder;
+    padding: 3% 0%;
+    text-align: center;
+}
+.information .container-fluid .row .col .card h3 + p{ 
+    color: black;
+    font-weight: bold;
+}
+.information .container-fluid .row .col .card h3{
+    color: white;
+    text-align: center;
+}
+.Founders .container-fluid .row .card .row h5{
+    text-align: center;
+    font-weight: bold;
+}
+.Statistic .backgd{
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url('../image/car (5).jpg');
+    background-size: cover;
+}
+.Statistic .cover{
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.589);
+}
+.Statistic .backgd .cover .row{
+    display: flex;
+    width: 100%;
+    padding-top: 200px;
+}
+.Statistic .backgd .cover .row .cal{
+    padding: 1%;
+}
+.Statistic .backgd .cover .row .cal p,h3{
+    color: white;
+   font-size: 3em;
+}
+.Statistic .backgd .cover .row .cal h3{
+    font-size: 2em;
+}
+@media(max-width:1200px){
+    .Statistic .backgd{
+        height: 650px;
+    }
+    .Statistic .cover{
+        height: 650px;
+    }
+    .Statistic .backgd .cover .row{
+        padding-top: 180px;
+    }
+}
+@media(max-width:765px){
+    .Statistic .backgd{
+        height: 750px;
+    }
+    .Statistic .cover{
+        height: 750px;
+    }
+    .Statistic .backgd .cover .row{
+        padding-top: 90px;
+    }
+}
+.CompetingBrands{
+    width: 100%;
+    height: fit-content;
+}
+.CompetingBrands .container-fluid .row{
+    text-align: center;
+    margin: 5% auto;
+}
+.CompetingBrands .container-fluid .row h2{
+    color: rgb(66, 0, 97);
+    font-weight: bolder;
+}
+.CompetingBrands .container-fluid .row .col-sm-12 img{
+    margin: 3%;
+    width: 300px;
+    height: 250px;
+}
+.Advertisement{
+    background-color: rgb(75, 75, 75);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.Advertisement .row{
+    text-align: center;
+}
+.Advertisement .row h3{
+    margin-bottom: 3% ;
+}
+.Advertisement .row .card{
+    background-color: rgb(238, 237, 237);
+    color: black;
+    font-size: large;
+}
+.Advertisement .row .col-12{
+    margin-top: 3%;
+}
+footer.container-fluid .up{
+    margin: 5% auto;
+}
+footer.container-fluid .up .card{
+    text-align: center;
+    width: 18em;
+    background-color: rgb(75, 75, 75);
+    margin-top: 10px;
+}
+footer.container-fluid .up .card .card-title{
+    color: white;
+}
+footer.container-fluid .up .card .card-text2{
+    color: white;
+    text-align: left;
+    margin-top: 50px;
+}
+.down{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    padding-top: 10px;
+    background-color: rgb(75, 75, 75);
+}

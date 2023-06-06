@@ -1,0 +1,394 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(52, 180, 223);
+    font-family: 'Playfair Display', serif;
+}
+ul {
+    list-style: none;
+}
+.container{
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* This code start with header style  */
+header{
+}
+/* small */
+@media (min-width: 578px) {
+    .container{
+        width: 90%;
+    }
+}
+header div.container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 1% 5%;
+    border-bottom: 2px white solid;
+    border-radius: 50px;
+    padding-bottom: 15px;
+    width: 90%;
+}
+header div.container nav{
+    flex: 1;
+    display: flex;
+    margin: 0% 3%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+/* This code for icon logo and account  */
+header div.container a i.logo ,i.account{
+    font-size: 50px; 
+    color: white;
+ }
+ /* This code for icon tougle */
+ header div.container nav .tougle{
+    color: white;
+    font-size: xx-large;
+    position: absolute;
+    top: 22%;
+    right: 4%;
+    z-index: 1;
+}
+/* This for hiden tougle of big screan  */
+@media (min-width: 769px){
+    header div.container nav .tougle{
+        display: none;
+    }
+    /* this code to display content ul for navbar  */
+    header div.container nav ul{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+/* This code of show content navbat when chicked in tougle  */
+header div.container nav .tougle:hover + ul li{
+    display: flex;
+    border-bottom: 1px black solid;
+}
+/* This code of show icon acount when chicked in tougle  */
+header div.container nav .tougle:hover + ul + a i{
+    display: flex;
+    flex-direction: column;
+    position: absolute; 
+    top: 75px;
+    right: 0px;
+    border-bottom: 1px black solid;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding-left: 65px;
+    padding-right: 56px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 40px;
+    z-index: 1;
+}
+/* This code to sitting content navbar when chicked in tougle  */
+header div.container nav .tougle:hover + ul{
+    flex-direction: column;
+    position: absolute; 
+    top: 140px;
+    right: 0%;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+}
+/* This code to hedin content navbar and icon account when change size sit to small  */
+@media (max-width: 768px){
+    header div.container nav{
+        justify-content: flex-end;
+    }
+    header div.container nav ul li , .account {
+        display: none;
+    }
+    
+}
+/* This code to sitting items navbar  */
+header div.container nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 20px 10px;
+    font-size: x-large;
+    font-weight: bold;
+}
+/* This code to change background for items navbar when drag the mouse on it */
+header div.container nav ul li a:hover{
+    background-color: rgba(255, 255, 255, 0.384);
+}
+/* -------------------------------------------------------------------------------------------------------------  */
+/* start style slider  */
+.slider{
+    height: 100vh;
+    background-image: url(../image/turntable-1109588_1920.jpg);
+    position: relative;
+}
+/* This code for background cover slider  */
+.slider .bgsilder{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.363);
+}
+/* This code for text on slider  */
+.slider .text{
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)
+}
+/* This code for content text slider  */
+.slider .text .content{
+    position: absolute;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.678);
+    padding: 40px;
+}
+@media (max-width: 768px){
+    .slider .text .content{
+        padding: 10px;
+    }
+}
+/* This code for paragtaph text slider  */
+.slider .bgsilder .text .content p{
+    padding-top: 10px;
+}
+/* This code for sngle move slider  */
+.slider .fas{
+    position: absolute;
+    top: 55%;
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+}
+@media (max-width: 768px){
+    .slider .text{
+        transform: translateX(-50%);
+        top: 40%;
+    }
+    .slider .fas{
+    top: 50%;
+    }
+}
+/* This code for show background sngle slider  */
+.slider .fas:hover{
+    background-color: rgba(255, 255, 255, 0.274);
+}
+.fa-angle-double-right{
+    right: 0%;
+}
+.fa-angle-double-left{
+    left: 0%;
+}
+/* This code to show button under content slider  */
+.slider ul{
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+}
+/* This code to give style button under content slider  */
+.slider .bolit li{
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin-left: 8px;
+}
+/* This media for change location button slider  */
+@media (max-width: 768px){
+    .slider ul{
+        left: 40%;
+    }
+}
+/* This code to show active button slider  */
+.slider .bolit .active{
+    background-color: white;
+}
+/* End style slider  */
+/* -------------------------------------------------------------------------------------------------- */
+/* start services */
+.services .container{
+    margin-top: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.services .container .text{
+    font-size: 22px;
+    font-weight: bold;
+}
+.services .container .text h2{
+    text-transform: uppercase;
+
+}
+.services .text h2::after{
+    content: "";
+    width: 180px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40px;
+}
+.services .container .text p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* card  */
+.services .container .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* iner card  */
+.services .container .card .incard{
+    width: 100%;
+    background-color: white;
+    margin: 5px;
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgb(132, 0, 255) 5px 5px 5px;
+    transition: all 0.7s;
+
+}
+.services .container .card .incard:hover{
+    box-shadow: rgb(255, 0, 0) 5px 5px 5px;
+    transform: translateY(-10px);
+}
+ @media (max-width: 568px){
+    .services .container .card .incard{
+        width: 100%
+    }
+}
+@media (min-width: 769px){
+    .services .container .card .incard{
+        width: 48%
+    }
+} 
+@media (min-width: 1200px){
+    .services .container .card .incard{
+        width: 24%
+    }
+} 
+.services .card .incard i {
+    font-size: 25px;
+    margin-top: 10px;
+}
+.fa-laptop-code{
+    color: rgb(255, 0, 255);
+}
+.fa-mobile-alt{
+    color: blueviolet;
+}
+.fa-money-check{
+    color: red;
+}
+.fa-user-cog{
+  color: blue;  
+}
+.services .card .incard h3{
+    font-size: 30px;
+    margin-top: 10px;
+    color: rgb(0, 139, 19);
+}
+.services .card .incard p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: rgb(162, 0, 255);
+}
+/* End services  */
+/* --------------------------------------------------------------------- */
+/* start footer  */
+footer.services{
+    background-color: rgb(255, 255, 255);
+    padding-top: 1%;
+    margin-top: 2%;
+    margin-bottom: 0%;
+}
+footer.services .container .card .incard{
+    box-shadow: none;
+    border-radius: 0%;
+    transition: none;
+    margin-top: 5px;
+}
+footer.services .container .card .incard:hover{
+    box-shadow: none;
+    transform: none;
+}
+@media (max-width: 1200px){
+    footer.services .container .card .incard{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    }
+}
+footer.services .card .incard h3{
+    font-size: 28px;
+    color: rgb(0, 0, 0)
+}
+footer.services .container .card .incard a i.fa-pagelines{
+    font-size: 100px;
+    color: black;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+footer.services .container .card .incard a i.fa-facebook{
+    color: blue;
+    font-size: 30px;
+    margin-top: 60px;
+}
+footer.services .container .card .incard a i.fa-telegram{
+    color: rgb(39, 183, 219);
+    font-size: 30px;
+}
+footer.services .container .card .incard a i.fa-whatsapp{
+    color: rgb(13, 192, 13);
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+footer.services .container .card .incard i.fa-user-clock{
+    color: blueviolet;
+    font-size: 50px;
+    margin-top: 30px;
+}
+footer.services .container .card .incard i.fa-id-card{
+    color: rgb(145, 145, 145);
+    font-size: 50px;
+    margin-top: 30px;
+}
+footer.services .container .card .incard p{
+    color: rgb(255, 0, 0);
+}
+/* End footer  */
+/* start under footer  */
+footer.services .down{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 0%;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.856);
+}
+footer.services .down{
+    font-size: x-small;
+}
+@media (max-width: 1200px){
+    footer.services .down{
+        margin-top: 5%;
+    }
+}
+/* End under footer  */
